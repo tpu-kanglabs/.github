@@ -2,7 +2,7 @@
 
 ### About
 
-At the Kang Laboratory, we focus on advanced research in the fields of computer vision and artificial intelligence.  
+At the AI Vision Laboratory, we focus on advanced research in the fields of computer vision and artificial intelligence.  
 While our work originally centered on visual data, we are now expanding into multimodal approaches that integrate a range of vision tasks.
 
 Our current research explores applications of such multimodal systems in areas including medical image analysis and video-based understanding, aiming to develop deep learning models that can robustly interpret complex, real-world data.
