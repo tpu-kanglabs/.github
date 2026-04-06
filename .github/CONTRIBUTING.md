@@ -1,100 +1,100 @@
-# リポジトリへの貢献ガイド
+# Contributing Guide
 
-このドキュメントでは、リポジトリへの貢献方法を説明します。
+This document explains how to contribute to the repository.
 
-事前に[GitHubアカウントを作成](https://docs.github.com/ja/get-started/start-your-journey/creating-an-account-on-github)し、ローカルマシンで[Gitのセットアップ](https://docs.github.com/ja/get-started/getting-started-with-git/set-up-git)を済ませてください。
+Please [create a GitHub account](https://docs.github.com/en/get-started/start-your-journey/creating-an-account-on-github) in advance and [set up Git](https://docs.github.com/en/get-started/getting-started-with-git/set-up-git) on your local machine.
 
-## 問題を報告する
+## Reporting Issues
 
-リポジトリにバグなどの問題を報告するにはIssueを作成します。Issueは、リポジトリに関する議論や問題解決のための重要な手段です。
+To report a bug or other problem in the repository, create an Issue. Issues are an important tool for discussing and resolving problems related to the repository.
 
-**注意**: 問題に脆弱性が含まれる場合は、Issueを通して報告**しないでください**。必ずメンテナーに直接連絡するようにお願いします。
+**Note**: If the issue involves a vulnerability, please do **not** report it through an Issue. Be sure to contact the maintainers directly.
 
-1. リポジトリのページにアクセスします。
-2. 上部のメニューから「Issues」タブをクリックします。
-3. 「New issue」ボタンをクリックします。
-4. Issueのタイトルと詳細を記入します。バグ報告の場合は、再現手順や期待する動作も記載してください。
-5. 「Submit new issue」ボタンをクリックしてIssueを作成します。
+1. Go to the repository page.
+2. Click the "Issues" tab in the top menu.
+3. Click the "New issue" button.
+4. Fill in the title and details of the issue. For bug reports, please also include steps to reproduce and the expected behavior.
+5. Click the "Submit new issue" button to create the issue.
 
-## 変更を提案する
+## Proposing Changes
 
-### 1. リポジトリをフォークする
+### 1. Fork the Repository
 
-まずリポジトリを自分のアカウントにフォークします。
+First, fork the repository to your own account.
 
-1. リポジトリのページにアクセスします。
-2. 画面右上の「Fork」ボタンをクリックします。
+1. Go to the repository page.
+2. Click the "Fork" button in the upper right corner of the screen.
 
-### 2. リポジトリをクローンする
+### 2. Clone the Repository
 
-フォークしたリポジトリを自分のローカルマシンにクローンします。
+Clone the forked repository to your local machine.
 
-1. 自分のGitHubアカウントにある、フォークしたリポジトリのページにアクセスします。
-2. 「Code」ボタンをクリックし、表示されるURLをコピーします。
-3. ターミナルを開き、以下のコマンドを実行します：
+1. Go to the page of the forked repository in your GitHub account.
+2. Click the "Code" button and copy the URL displayed.
+3. Open a terminal and run the following command:
     
     ```bash
-    git clone コピーしたURL
+    git clone <copied-URL>
     ```
     
 
-### 3. 新しいブランチを作成する
+### 3. Create a New Branch
 
-変更を加える前に、`main`ブランチから分岐する新しいブランチを作成します。
+Before making changes, create a new branch off the `main` branch.
 
-1. ターミナルでリポジトリのディレクトリに移動します：
+1. Navigate to the repository directory in your terminal:
     
     ```bash
-    cd フォルダ名
+    cd <folder-name>
     ```
     
-2. 新しいブランチを作成してチェックアウトします：
+2. Create and check out a new branch:
     
     ```bash
-    git checkout -b 新しいブランチ名
+    git checkout -b <new-branch-name>
     ```
     
 
-### 4. 変更を加える
+### 4. Make Changes
 
-プロジェクトに必要な変更を加えます。変更内容が完成したら、コミットします。
+Make the necessary changes to the project. Once your changes are complete, commit them.
 
-テストなどの指示がある場合は必ず従ってください。
+If there are instructions such as running tests, be sure to follow them.
 
-1. 変更をステージします：
+1. Stage your changes:
     
     ```bash
     git add .
     ```
     
-2. 変更をコミットします：
+2. Commit your changes:
     
     ```bash
-    git commit -m "変更内容の短い説明"
+    git commit -m "Short description of changes"
     ```
     
 
-### 5. リモートリポジトリにプッシュする
+### 5. Push to the Remote Repository
 
-ローカルの変更を自分のGitHubリポジトリにプッシュします。
+Push your local changes to your GitHub repository.
 
-1. 以下のコマンドを実行します：
+1. Run the following command:
     
     ```bash
-    git push origin ブランチ名
+    git push origin <branch-name>
     ```
     
 
-### 6. プルリクエストを作成する
+### 6. Create a Pull Request
 
-GitHub上でプルリクエスト（Pull Request）を作成し、変更内容を元のリポジトリに提案します。
+Create a Pull Request on GitHub to propose your changes to the original repository.
 
-1. 自分のGitHubリポジトリのページにアクセスします。
-2. 「Compare & pull request」ボタンをクリックします。
-3. 変更内容を記載し、「Create pull request」ボタンをクリックします。
+1. Go to your GitHub repository page.
+2. Click the "Compare & pull request" button.
+3. Describe your changes and click the "Create pull request" button.
 
-### 7. コードレビューとフィードバック
+### 7. Code Review and Feedback
 
-プルリクエストが作成されると、リポジトリのメンテナーがコードレビューを行います。フィードバックがあった場合は、指示に従って修正を行い、再度プッシュします。
+Once the pull request is created, the repository maintainers will perform a code review. If there is feedback, make the requested changes and push again.
 
-不明点や質問がある場合は、気軽にissueを作成して問い合わせてください。皆さんの貢献をお待ちしております！🌟
+If you have any questions or concerns, feel free to open an issue. We look forward to your contributions! 🌟
