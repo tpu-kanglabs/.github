@@ -1,5 +1,5 @@
-## 関連するIssue
+## Related Issue
 
-## 変更内容
+## Changes
 
-## 備考
+## Notes
